@@ -8,19 +8,12 @@
   outline: 0;
 }
 
-
-body{
-  /* Definindo a fonte de todo nosso body */
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
 li {
   /* retirando as bolinhas das nossas listas */
   list-style: none;
 }
 
-.header-menu{
+.menu{
   /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
   display: flex;
   position: fixed; /*Deixa o nosso header fixo*/
@@ -29,11 +22,8 @@ li {
   padding-bottom: 32px; /*Espaçamento inferior*/
   padding-top: 32px;/*Espaçamento superior*/
   height: 60px; /*Altura*/
-  background-color: #800505; /*cor de fundo da nossa barra de navegação*/
-}
-
-.header-menu nav {
-  display: flex; 
+  background-color: #e51313; /*cor de fundo da nossa barra de navegação*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: flex-end; /*Colocando no lado direito da pagina*/
   width: 100%; /*Largura*/
 }
@@ -55,7 +45,7 @@ li {
 .principal{
   height: 100vh; /*Altura*/
   display: flex;
-  background-color: #EAEAEA; /*Cor do fundo*/
+  background-color: #cdcaca; /*Cor do fundo*/
 }
 
 /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
@@ -80,33 +70,43 @@ centro do browser. O container é invisível. */
   text-align: center;
 }
 
+#imagem_perfil {
+  width: 18%;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
+}
+
 .nome-completo {
   font-size: 36px;
-  color: #ff4dbc;
+  color: #ac0a6e;
   font-weight: 700; /*espessura*/
   height: 45px;
 }
 
 .profissao{
-  color: #C6B5D5;
+  color: #631ca0;
   height: 60PX;
 }
 
 .texto-sobre {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
   line-height: 32px; /*Espaçamento entre as linhas*/
+  text-align: justify;
 }
 
 .article-lista{
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
+  text-align: left;
 }
 
 .topico-principal {
   font-size: 36px;
-  color: #ff4dbc;
+  color: #ac0a6e;
 }
 
 .lista-item{
@@ -120,7 +120,7 @@ centro do browser. O container é invisível. */
 .lista-titulo{
  margin-bottom: 5px; 
  font-size: 22px;
- color: #661e4b;
+ color: #631ca0;
  font-weight: 700;
 }
 
@@ -134,24 +134,24 @@ centro do browser. O container é invisível. */
   font-size: 18px;
   margin-top: 5px;
   line-height: 20px; /*Espaçamento entre as linhas*/
-  color: #828282;
   font-weight: 300;
 }
 
 .rodape{
-  background-color: #724796;
+  background-color: #080808;
   height: 300px;
   display: flex;
-  align-items: center;
+  align-items:center;
 }
 
 .lista-rodape li{
   color: #FFF;
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: flex;
-  align-items: center;
+  align-items:baseline;
+  text-align: left;
 }
 
 .estilo-icone{
