@@ -3,25 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu portfólio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- chamando o ícone na aba do navegador -->
-  <link rel="shortcut icon" href="./img/foto-perfil.png">
-  <!-- tag para inserirmos icones de uma lib externa no nosso HTML -->
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Projeto Final</title>
 </head>
 
 <body>
   <!-- cabeçalho da nossa página, visível ao usuário -->
-  <header class="header-menu">
-    <nav>
+  <header class="menu">
       <ul class="lista-menu">
         <li><a href="#formacao">Formação</a> </li>
         <li><a href="#portifolio">Portfólio</a></li>
         <li><a href="#contato">Contatos</a></li>
       </ul>
-    </nav>
   </header>
 
   <!-- corpo da nossa página, visível ao usuário -->
@@ -29,19 +27,16 @@
     <section class="principal">
       <article class="subcontainer-principal container">
         <div>
-          <img src="inde">
+          <img id="imagem_perfil" src="Foto wie.jpg"/>
         </div>
         <div>
           <h1 class="nome-completo">Alice Bispo dos Santos</h1>
-          <h2 class="profissao">Desenvolvedora Front-end</h2>
+          <h2 class="profissao">Estudante</h2>
         </div>
         <div class="texto-sobre">
           <p>
-            Graduanda em Engenharia de Produção pela Universidade Federal do Recôncavo da Bahia e com conhecimento em programação,
-            com foco nas linguagens de c#, python, javascript, html e css.
-            As três ultimas formada pelo curso da Pretalab. Sou secretaria do WIE.
-            Organização que tem como principal objetivo defender a permanência das mulheres nas areas de exatas e tecnologias.
-
+            Graduanda em Engenharia de Produção pela Universidade Federal do Recôncavo da Bahia e com conhecimento em programação, com foco nas linguagens de c#, python, javascript, html e css.
+            As três ultimas formada pelo curso da Pretalab. Sou secretaria do WIE, Organização que tem como principal objetivo defender a permanência das mulheres nas areas de exatas e tecnologias.
           </p>
         </div>
       </article>
@@ -60,15 +55,16 @@
               <p class="lista-titulo">Ciclo formativo</p>
               <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local">Pretalab Olabi</a>
               <p class="lista-descricao">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
+                O ciclo formativo tem o objetivo de iniciar mulheres negras na area da tecnologia, onde aprende HTML5, CSS3 e logica de programação.
               </p>
             </li>
 
             <li>
-              <p class="lista-titulo">Analise e desenvolvimento de sistemas</p>
-              <a href="https://www.ifsp.edu.br/" target="_blank" class="lista-local">ifsp</a>
+              <p class="lista-titulo">Code Up</p>
+              <a href="https://www.instagram.com/codeup.ufrb/" target="_blank" class="lista-local">Code Up</a>
               <p class="lista-descricao">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
+                Ajudando mulheres a se encontrar e transformar sua aptidão em realidade. O projeto Code Up nasceu de uma iniciativa de mulheres, discentes da UFRB, com intuito de criar um grupo de mulheres aprendendo e programando juntas para difundir a tecnologia e aplicar conhecimento prático. 
+                O grupo se estende a um público cujo interesse seja o desenvolvimento de tecnologia, não importando a área de atuação. Nosso objetivo é uma maior difusão da tecnologia e o estudo da linguagem de programação entre as mulheres da UFRB e do Recôncavo Baiano. Aprendento a programar do zero.
               </p>
             </li>
           </ul>
@@ -77,27 +73,24 @@
       </article>
     </section>
 
-    <section>
-      <article>
+    <section id="formacao">
+      <article class="container article-lista">
         <div>
-          <h3>Blog</h3>
+          <h3 class="topico-principal">Portfólio</h3>
         </div>
-        <div>
+
+        <div class="lista-item">
           <ul>
             <li>
-              <p>Mulheres que fazem história</p>
-              <p>Revelo</p>
-              <a href="https://community.revelo.io/27-desenvolvedoras-brasileiras-para-se-inspirar-em-2022/" target="_blank"> 27 desenvolvedoras brasileiras para se inspirar em 2022</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
-            </li>
-            <li>
-              <p>Quem Coda BR</p>
-              <p>Pretalab</p>
-              <a href="https://www.pretalab.com/report-quem-coda" target="_blank">Quem coda br</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+              <p class="lista-titulo">Calculadora</p>
+              <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local">Pretalab Olabi</a>
+              <p class="lista-descricao">
+                O ciclo formativo tem o objetivo de iniciar mulheres negras na area da tecnologia, onde aprende HTML5, CSS3 e logica de programação.
+              </p>
             </li>
           </ul>
         </div>
+
       </article>
     </section>
   </main>
@@ -106,6 +99,7 @@
   <footer class="rodape">
     <div class="container">
       <ul id="contato" class="lista-rodape">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <li><i class="fas fa-envelope-square estilo-icone"></i>email@email.com</li>
         <li href=""><i class="fab fa-linkedin estilo-icone"></i>amanda-silva</li>
         <li href=""><i class="fab fa-github-square estilo-icone"></i>asilvaolabi</li>
